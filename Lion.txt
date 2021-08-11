@@ -1,0 +1,45 @@
+public class Animal {
+	void speechless()
+	{
+		System.out.println("Animals are speechless");
+	}
+
+}
+
+public class Lion extends Animal{
+	void carnivorous()
+	{
+		System.out.println("Lions feed on animals");
+		
+	}
+
+}
+
+public class Cub extends Lion{
+	void cuteness()
+	{
+		System.out.println("Cubs are very cute");
+	}
+
+}
+
+public class multilevelInheritance2 {
+	public static void main(String args[]) 
+	{
+		Animal A = new Animal();
+		A.speechless();
+		
+		Lion mufasa = new Lion();
+		mufasa.speechless();
+		mufasa.carnivorous();
+		
+		Cub simba = new Cub();
+		simba.speechless();
+		simba.carnivorous();
+		simba.cuteness();
+		
+	}
+	
+
+}
+

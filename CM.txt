@@ -1,0 +1,56 @@
+public class CheifMinister {
+	void head()
+	{
+		System.out.println("He is the head of state");
+	}
+
+}
+
+public class FoodMinister extends CheifMinister{
+	void food()
+	{
+		System.out.println("He will take care of Hunger");
+	}
+
+}
+
+public class PowerMinister extends CheifMinister{
+	void power()
+	{
+		System.out.println("He will take care of Electric");
+	}
+
+}
+
+public class HomeMinister extends CheifMinister{
+	void home()
+	{
+		System.out.println("He will take care of law and order");
+	}
+
+}
+
+public class HierarchicalInheritance2 {
+
+	public static void main(String[] args) {
+	
+		// TODO Auto-generated method stub
+
+		CheifMinister cm = new CheifMinister();
+		cm.head();
+		
+		FoodMinister fm = new FoodMinister();
+		fm.head();
+		fm.food();
+		
+		PowerMinister pm = new PowerMinister();
+		pm.head();
+		pm.power();
+		
+		HomeMinister hm = new HomeMinister();
+		hm.head();
+		hm.home();
+		
+		
+
+	}
